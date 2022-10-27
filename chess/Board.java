@@ -3,7 +3,7 @@ public class Board {
     // Instance variables
     private Piece[][] board;
 
-    //TODO:
+    
     // Construct an object of type Board using given arguments.
     public Board() {
       board = new Piece[8][8];
@@ -17,13 +17,13 @@ public class Board {
 
     // Accessor Methods
 
-    //TODO:
+    
     // Return the Piece object stored at a given row and column
     public Piece getPiece(int row, int col) {
       return this.board[row][col];
     }
 
-    //TODO:
+    
     // Update a single cell of the board to the new piece.
     public void setPiece(int row, int col, Piece piece) {
       this.board[row][col] = piece;
@@ -31,7 +31,7 @@ public class Board {
 
     // Game functionality methods
 
-    //TODO:
+    
     // Moves a Piece object from one cell in the board to another, provided that
     // this movement is legal. Returns a boolean to signify success or failure.
     public boolean movePiece(int startRow, int startCol, int endRow, int endCol) {
@@ -46,7 +46,7 @@ public class Board {
       return false;
     }
 
-    //TODO:
+   
     // Determines whether the game has been ended, i.e., if one player's King
     // has been captured.
     public boolean isGameOver() {
@@ -69,7 +69,7 @@ public class Board {
 
     }
 
-    //TODO:
+   
     // Construct a String that represents the Board object's 2D array. Return
     // the fully constructed String.
     public String toString() {
@@ -92,7 +92,7 @@ public class Board {
     }
 
 
-    //TODO:
+    
     // Sets every cell of the array to null. For debugging and grading purposes.
     public void clear() {
       for (int i = 0; i < 8; i++){
@@ -104,7 +104,7 @@ public class Board {
 
     // Movement helper functions
 
-    //TODO:
+    
     // Ensure that the player's chosen move is even remotely legal.
     // Returns a boolean to signify whether:
     // - 'start' and 'end' fall within the array's bounds.
@@ -141,7 +141,7 @@ public class Board {
         return true;
     }
 
-    //TODO:
+    
     // Check whether the 'start' position and 'end' position are adjacent to each other
     public boolean verifyAdjacent(int startRow, int startCol, int endRow, int endCol) {
       boolean current;
@@ -162,7 +162,7 @@ public class Board {
       return false;
     }
 
-    //TODO:
+    
     // Checks whether a given 'start' and 'end' position are a valid horizontal move.
     // Returns a boolean to signify whether:
     // - The entire move takes place on one row.
@@ -188,7 +188,7 @@ public class Board {
     }
 
 
-    //TODO:
+    
     // Checks whether a given 'start' and 'end' position are a valid vertical move.
     // Returns a boolean to signify whether:
     // - The entire move takes place on one column.
@@ -213,7 +213,7 @@ public class Board {
       return true;
     }
 
-    //TODO:
+    
     // Checks whether a given 'start' and 'end' position are a valid diagonal move.
     // Returns a boolean to signify whether:
     // - The path from 'start' to 'end' is diagonal... change in row and col.
